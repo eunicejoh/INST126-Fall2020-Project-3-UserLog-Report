@@ -1,0 +1,21 @@
+Sorting
+
+a) First, we will define a function that reads the lines of the user log text file, creates a list of lists (the attributes). For example, lst = [[2020-05-23, 00:34:10, m@g.com, login, web.local], etc.]. This will allow us to sort through the first and second index positions to sort the lines by their date and time of entry. We will then write a new text file (or overwrite the old user log) with this new ordered data.
+
+General Dictionary
+
+b) Then, we will use a function to create a global dictionary "dct." Each line of the newly sorted user log text file will be represented as an entry, with a unique variable name for each key ("key1, key2, etc...") and a list of related information as the respective value ([date, time, email, action, server]). Subsequently, each logged action and its data can easily be accessed via the same key.
+
+Reports
+
+c) Then, we will implement three different functions, each representing one aspect of the given problem (except irresponsible behavior and system glitches, which largely use the same code).
+
+i. For "suspicious activities," we will define the function sus_act(), which will return a list of keys that fulfill the criteria (logging in 5 or more times a day or accessing from 12-5). This will be done by creating a global dictionary of all possible date+time+server+email combinations (accomplished by looping through the values of the dictionary mentioned in b, and joining each item of the list into a string), the occurrences of which will be represented by the value (e.g., "2020-05-18 myworkstation.local tarrin.scoma@gmx.net": 6). Then, we would loop through the values of the dictionary and determine which are greater than five, and create a list with those keys. By splitting the strings of these keys into its individual parts, we can then loop through the values of the original dictionary "dct", find the related entries, and create a list consisting of their specific keys. We can then use this list of keys to write the relevant report file.
+
+ii. Similarly, for "irresponsible behavior" and "system glitches" we would create a function  which would return a list of keys representing iterations that make up the behavior. We would create two global dictionaries; one would be the date+server+email+"login" combinations (generally same process as mentioned in ci), and then create a record of their occurrence via the value of the dictionary. Then, the other would be the date+server+email+"logout" combination, along with its value occurrences. We would compare these two dictionaries to each other by splicing the date+server+email aspects of the string in the "login" dictionary (e.g., 2020-05-18 myworkstation.local tarrin.scoma@gmx.net), finding the corresponding string in the "logout" dictionary, and comparing their values. If the values of the login are greater, that key is added into a list of irresponsible behaviors; if the values of the logout are greater, that key is added into the list of system glitches. If they are equivalent, no action is taken. Consequently, we then split these keys into their attributes, filter through the values of the global dictionary "dct," and identify those relevant keys (e.g., key1, key2, etc.). We can then write the full values of these keys into the report file.
+
+iii. For domain count, in a function, we will use the .values() function to make a list of all the attributes from the global dictionary "dct," and loop through the index position of emails. In the loop, we will splice the emails to only include the substring following the @ symbol, and add these strings into a separate list. Finally, a dictionary will be created to identify all the possible domains (keys) and their corresponding values, which we will then write the keys and values of in a new reporting file.
+
+Additional
+
+d) Count the number of times each user logs in and subsequently outputs a report that compares everyone's number of logins, displaying who logged in the most (presumably, the user who is working the most) and who logged in the least (the worker who is presumably working the least). Therefore, we report some representation of employee productivity.
