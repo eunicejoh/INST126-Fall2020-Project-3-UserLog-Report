@@ -1,12 +1,12 @@
-Sorting
+### Sorting
 
 a) First, we will define a function that reads the lines of the user log text file, creates a list of lists (the attributes). For example, lst = [[2020-05-23, 00:34:10, m@g.com, login, web.local], etc.]. This will allow us to sort through the first and second index positions to sort the lines by their date and time of entry. We will then write a new text file (or overwrite the old user log) with this new ordered data.
 
-General Dictionary
+### General Dictionary
 
 b) Then, we will use a function to create a global dictionary "dct." Each line of the newly sorted user log text file will be represented as an entry, with a unique variable name for each key ("key1, key2, etc...") and a list of related information as the respective value ([date, time, email, action, server]). Subsequently, each logged action and its data can easily be accessed via the same key.
 
-Reports
+### Reports
 
 c) Then, we will implement three different functions, each representing one aspect of the given problem (except irresponsible behavior and system glitches, which largely use the same code).
 
@@ -16,6 +16,6 @@ ii. Similarly, for "irresponsible behavior" and "system glitches" we would creat
 
 iii. For domain count, in a function, we will use the .values() function to make a list of all the attributes from the global dictionary "dct," and loop through the index position of emails. In the loop, we will splice the emails to only include the substring following the @ symbol, and add these strings into a separate list. Finally, a dictionary will be created to identify all the possible domains (keys) and their corresponding values, which we will then write the keys and values of in a new reporting file.
 
-Additional
+### Additional
 
 d) Count the number of times each user logs in and subsequently outputs a report that compares everyone's number of logins, displaying who logged in the most (presumably, the user who is working the most) and who logged in the least (the worker who is presumably working the least). Therefore, we report some representation of employee productivity.
