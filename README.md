@@ -8,8 +8,15 @@ We were given the activities of 50 users over the course of one month (May 2020)
 given log file and generate an automated report consisting of 4 important insights:
 - Suspicious Activites
 - Irresponsible Behaviors
-- System Glitch
+- System Glitches
 - Domain Count
 
 ## How It Works
+### Suspicious Activites
+
+### Irresponsible Behaviors
+
+### System Glitches
+
+### Domain Count 
 
