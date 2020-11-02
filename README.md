@@ -14,6 +14,7 @@ given log file and generate an automated report consisting of 4 important insigh
 Subsequently, we used Python to write a program that will describe a) the total number of cases for each of the four insights and b) the specific behaviors of each user that contributed to each of the four insights (e.g., the specific occurrences during which an user was involved in suspicious behaviors), both in the form of a formatted report.
 
 ## How It Works
+Note: Up to date as of November 2nd, 2020. Should be treated as an updated "plan-of-action" file, and addresses all deviations in the flow of the problem.
 
 ### General
 First, we created a general global dictionary that will store each instance of the user log as a list of its attributes (date, time, action, server, and email) with a unique key, that is sorted in chronological order by the date.
