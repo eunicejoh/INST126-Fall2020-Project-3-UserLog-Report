@@ -45,3 +45,6 @@ Largely deviated from the plan-of-action upon realizing perhaps we don't, to put
 - Rather than making a date+time+server+email combined string for suspicious activities, we will simply compare the lists of values (attributes) of the global dictionary to each other (without the time) and note when they occur 5 or more times.
 - Last change also applies to irresponsible behavior and system glitches.
 - The updated "writing the report" function is detailed in the aforementioned section of the README file.
+
+
+### November 8th, 2020
