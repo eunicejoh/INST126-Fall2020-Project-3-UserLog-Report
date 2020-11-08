@@ -47,4 +47,4 @@ Largely deviated from the plan-of-action upon realizing perhaps we don't, to put
 - The updated "writing the report" function is detailed in the aforementioned section of the README file.
 
 
-### November 8th, 2020
+### November 9th, 2020
