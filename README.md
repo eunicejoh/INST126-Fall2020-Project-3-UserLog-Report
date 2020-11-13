@@ -47,14 +47,14 @@ Largely deviated from the plan-of-action upon realizing perhaps we don't, to put
 ### November 6th, 2020
 Once again changed from the plan-of-action:
 
--Instead of creating a unique key for each individual line, we have instead created a global dictionary that is sorted based on date, and then subsequently sorted that by time. As needed, we have developed lists with keys that represent the necessary attributes (date+server+email), primarily. Subsequently, the keys of these lists are compared to each other, and when they match, another dictionary is created with a list of the relevant lists of attributes.
--This largely accounts for the changed development of the code for all three functions (sus_act(), irr_beh(), and domain_ct()), though the final saw very few changes.
+- Instead of creating a unique key for each individual line, we have instead created a global dictionary that is sorted based on date, and then subsequently sorted that by time. As needed, we have developed lists with keys that represent the necessary attributes (date+server+email), primarily. Subsequently, the keys of these lists are compared to each other, and when they match, another dictionary is created with a list of the relevant lists of attributes.
+- This largely accounts for the changed development of the code for all three functions (sus_act(), irr_beh(), and domain_ct()), though the final saw very few changes.
 
 ### November 12th, 2020
 Last day!
 
--Some final notes: we have fixed the issue with regards to the date and emails repeating for each individual printed line (see Challenges We've Encountered, 3).
--There will be no grand function for writing the individual reports; instead, they are worked into the functions that also sort and organize the pertinent dictionaries.
+- Some final notes: we have fixed the issue with regards to the date and emails repeating for each individual printed line (see Challenges We've Encountered, 3).
+- There will be no grand function for writing the individual reports; instead, they are worked into the functions that also sort and organize the pertinent dictionaries.
 
 ## Challenges We've Encountered
 Boy have they been plentiful!
