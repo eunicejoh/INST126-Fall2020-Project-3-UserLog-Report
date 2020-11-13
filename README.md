@@ -46,7 +46,7 @@ Largely deviated from the plan-of-action upon realizing perhaps we don't, to put
 - Last change also applies to irresponsible behavior and system glitches.
 - The updated "writing the report" function is detailed in the aforementioned section of the README file.
 
-## Errors
+## Challenges We've Encountered
 
 
 
